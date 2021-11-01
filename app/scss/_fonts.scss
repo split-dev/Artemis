@@ -1,0 +1,28 @@
+//thin 100 light 300 regular 400 medium 500 bold 700 black 900
+@font-face {
+    font-family: 'Georgia Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/Georgia.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'Georgia Bold';
+    font-weight: 700;
+    font-style: normal;
+    src: url(../fonts/Georgia-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans Regular';
+    font-weight: 400;
+    font-style: normal;
+    src: url(../fonts/OpenSans-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'OpenSans SemiBold';
+    font-weight: 600;
+    font-style: normal;
+    src: url(../fonts/OpenSans-SemiBold.woff) format('woff');
+}

@@ -1,0 +1,5 @@
+@function convert($px) {
+    $parentWidth: 1920;
+    $result: 100vw / $parentWidth * $px;
+    @return($result);
+}

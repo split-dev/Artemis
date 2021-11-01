@@ -1,0 +1,444 @@
+                    @import 'vars.scss';
+                    * {
+                        box-sizing: border-box;
+                    }
+                    
+                    body {
+                        font-family: 'OpenSans Regular';
+                        font-weight: 400;
+                        font-size: 16px;
+                        background-color: #fff;
+                        margin: 0;
+                        color: #2C2C2C;
+                    }
+                    
+                    html {
+                        scroll-behavior: smooth;
+                    }
+                    
+                    a {
+                        text-decoration: none;
+                        color: #2C2C2C;
+                    }
+                    
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6 {
+                        font-family: 'Georgia Regular';
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    
+                    li {
+                        list-style: none;
+                        margin-right: 36px;
+                    }
+                    
+                     ::-webkit-input-placeholder {
+                        text-align: center;
+                    }
+                    
+                     ::-webkit-input-placeholder {
+                        text-align: center;
+                    }
+                    
+                    .container {
+                        width: 1110px;
+                        padding: 0 15px;
+                        margin: 0 auto;
+                    }
+                    
+                    button {
+                        height: 62px;
+                        width: 215px;
+                        border-radius: 31px;
+                        text-align: center;
+                        font-family: 'OpenSans-SemiBold';
+                        font-weight: 600;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-color: transparent;
+                        cursor: pointer;
+                    }
+                    
+                    .title {
+                        font-size: 48px;
+                        line-height: 64px;
+                    }
+                    
+                    .text {
+                        line-height: 29px;
+                        font-size: 16px;
+                    }
+                    
+                    .header {
+                        &__inner {
+                            font-size: 14px;
+                            height: 83px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                        }
+                        &__menu-list {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        &__help {
+                            justify-content: center;
+                            display: flex;
+                        }
+                        &__language {
+                            margin-right: 30px;
+                        }
+                        &__search {
+                            width: 15px;
+                            height: 15px;
+                        }
+                    }
+                    
+                    .conveyor {
+                        background-image: url(../images/block1.png);
+                        background-repeat: no-repeat;
+                        background-position: top right;
+                        background-size: contain;
+                        min-height: 675px;
+                        font-weight: 400;
+                        &__inner {
+                            padding-top: 144px;
+                        }
+                        &__title {
+                            display: block;
+                            width: 560px;
+                            height: 148px;
+                            margin-bottom: 24px;
+                        }
+                        &__text {
+                            width: 524px;
+                            height: 116px;
+                            margin-bottom: 56px;
+                        }
+                        &__buttons {
+                            display: flex;
+                        }
+                        .button1 {
+                            background-color: #FFCC2A;
+                            // padding: 19px 41px 18px 46px;
+                            margin-right: 20px;
+                        }
+                        .button2 {
+                            background-color: transparent;
+                            border: solid 1px #2D415E;
+                            // padding: 19px 52px 18px 56px;
+                        }
+                    }
+                    
+                    .board {
+                        min-height: 540px;
+                        position: relative;
+                        &_image {
+                            position: absolute;
+                            left: 100px;
+                            top: -40px;
+                        }
+                        &__inner {
+                            margin: 93px auto 0 auto;
+                            width: 1140px;
+                            height: 304px;
+                            border-radius: 20px;
+                            background-color: #2D415E;
+                            display: flex;
+                            margin-bottom: 225px;
+                            justify-content: space-between;
+                            position: relative;
+                        }
+                        &__numbers {
+                            padding: 99px 96px 0;
+                            width: 60%;
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        &__info {
+                            color: #FFFAEC;
+                            .info-title {
+                                font-size: 16px;
+                            }
+                            .info-number {
+                                font-size: 60px;
+                                color: #FFCD00;
+                            }
+                        }
+                        &__picture {
+                            position: absolute;
+                            right: -10px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        &__final-title {
+                            text-align: center;
+                            margin-bottom: 80px;
+                            font-size: 48px;
+                        }
+                    }
+                    
+                    .hospital {
+                        background-color: #F8F8F8;
+                        padding-top: 103px;
+                        background-image: url(../images/hospital.png);
+                        background-repeat: no-repeat;
+                        background-position: center right;
+                        background-size: auto;
+                        &__inner {
+                            height: 680px;
+                        }
+                        &__block {
+                            width: 454px;
+                            font-size: 48px;
+                            line-height: 64px;
+                            font-style: normal;
+                            font-weight: normal;
+                            margin-bottom: 24px;
+                        }
+                        &__title {
+                            width: 454px;
+                            height: 128px;
+                        }
+                        &__text {
+                            margin-top: 24px;
+                            width: 462px;
+                            height: 203px;
+                            margin-bottom: 56px;
+                        }
+                        &__button {
+                            background-color: #FFCC2A;
+                            margin-right: 20px;
+                        }
+                    }
+                    
+                    .service {
+                        min-height: 680px;
+                        padding-top: 135px;
+                        &__inner {
+                            display: flex;
+                            justify-content: space-between;
+                        }
+                        &_image {
+                            margin-right: 36.7px;
+                        }
+                        &__title {
+                            width: 373px;
+                            height: 64px;
+                        }
+                        &__text {
+                            margin-top: 24px;
+                            max-width: 473px;
+                            height: 203px;
+                            margin-bottom: 56px;
+                        }
+                        &__buttons {
+                            display: flex;
+                            .button1 {
+                                background-color: #FFCC2A;
+                                margin-right: 20px;
+                            }
+                            .button2 {
+                                margin-left: 130px;
+                            }
+                        }
+                    }
+                    
+                    .video {
+                        min-height: 815px;
+                        padding-top: 149px;
+                        &__title {
+                            text-align: center;
+                            font-size: 48px;
+                            line-height: 64px;
+                            margin-bottom: 76px;
+                        }
+                        &__block {
+                            display: flex;
+                            justify-content: space-between;
+                            position: relative;
+                            .shape1 {
+                                position: absolute;
+                                top: 33%;
+                                left: -60px;
+                            }
+                            .shape2 {
+                                position: absolute;
+                                right: 0;
+                                top: 33%;
+                                right: -60px;
+                            }
+                        }
+                        &__name {
+                            height: 78px;
+                            width: 296px;
+                            line-height: 26px;
+                            font-size: 20px;
+                        }
+                    }
+                    
+                    .topic {
+                        font-size: 32px;
+                        margin-bottom: 31px;
+                    }
+                    
+                    .form-input {
+                        padding: 0;
+                        margin-bottom: 49px;
+                        border: none;
+                        border-bottom: 1px solid #000;
+                        width: 465px;
+                        height: 31px;
+                        background-color: transparent;
+                    }
+                    
+                    .form-list {
+                        padding-left: 0;
+                    }
+                    
+                    input::placeholder {
+                        text-align: left;
+                    }
+                    
+                    .form {
+                        min-height: 880px;
+                        padding-top: 64px;
+                        position: relative;
+                        &__inner {
+                            position: relative;
+                        }
+                        &__title {
+                            text-align: center;
+                            font-size: 48px;
+                            line-height: 64px;
+                            margin-bottom: 76px;
+                            text-align: center;
+                            margin-bottom: 80px;
+                            font-size: 48px;
+                        }
+                        &__block {
+                            background-color: #979797;
+                            width: 884px;
+                            height: 510px;
+                            display: flex;
+                            border-radius: 20px;
+                            background-color: #F8F8F8;
+                            margin: 0 auto;
+                        }
+                        &__info {
+                            background-image: url(../images/formbg.png);
+                            background-position: 0 0;
+                            background-repeat: no-repeat;
+                            background-size: auto;
+                            text-align: center;
+                        }
+                        &__Inquiries {
+                            justify-content: space-between;
+                            padding-top: 52px;
+                            padding-right: 50px;
+                            padding-left: 40px;
+                            color: white;
+                        }
+                        &__contacts {
+                            font-size: 16px;
+                            margin-bottom: 80px;
+                        }
+                        &__contacts a {
+                            color: white;
+                        }
+                        &__media {
+                            justify-content: space-between;
+                            padding-right: 50px;
+                            padding-left: 40px;
+                            color: white;
+                        }
+                        &__contacts {
+                            font-size: 16px;
+                        }
+                        &__contacts a {
+                            color: white;
+                        }
+                        &__workplace {
+                            .topic {
+                                margin-top: 45px;
+                                padding-left: 35px;
+                            }
+                            .form-input {
+                                outline: none;
+                            }
+                        }
+                        &__button {
+                            margin-left: 156px;
+                            font-size: 20px;
+                            background-color: #FFCC2A;
+                        }
+                        .block6-3 {
+                            position: absolute;
+                            top: 172px;
+                            right: -26px;
+                        }
+                        .block6-4 {
+                            position: absolute;
+                            bottom: 50px;
+                            right: -50px;
+                        }
+                        .block6-1 {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                        }
+                        .block6-2 {
+                            position: absolute;
+                            top: 100px;
+                            left: 150px;
+                        }
+                    }
+                    
+                    .subtitle {
+                        font-size: 20px;
+                    }
+                    
+                    .footer-list {
+                        font-size: 14px;
+                    }
+                    
+                    .footer-list {
+                        padding-left: 0;
+                    }
+                    
+                    .footer {
+                        background-color: #F8F8F8;
+                        position: relative;
+                        &__inner {
+                            padding-top: 60px;
+                        }
+                        &__top {
+                            display: flex;
+                            justify-content: space-between;
+                            // border-bottom: #D0D0D0 1px solid;
+                        }
+                        &__bottom {
+                            height: 30px;
+                            color: #2C2C2C;
+                            font-size: 12px;
+                            text-align: center;
+                            margin-top: 16px;
+                        }
+                    }
+                    
+                    .footer::after {
+                        position: absolute;
+                        content: "";
+                        width: 100%;
+                        height: 1px;
+                        background-color: #D0D0D0;
+                        bottom: 40px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
